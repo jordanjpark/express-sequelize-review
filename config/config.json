@@ -1,0 +1,6 @@
+{
+  "database": "express_sequelize_review",
+  "host": "localhost",
+  "dialect": "postgres",
+  "logging": false
+}

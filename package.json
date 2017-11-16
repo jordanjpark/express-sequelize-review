@@ -1,0 +1,22 @@
+{
+  "name": "express-sequelize-review",
+  "version": "1.0.0",
+  "description": "practice for checkpoint-express-sequelize",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon --exec 'mocha --reporter spec --timeout 300 test/*.test.js || true'",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jordanjpark/express-sequelize-review.git"
+  },
+  "keywords": [
+    "express",
+    "sequelize"
+  ],
+  "author": "Jordan Park",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jordanjpark/express-sequelize-review/issues"
+  },
+  "homepage": "https://github.com/jordanjpark/express-sequelize-review#readme"
+}
