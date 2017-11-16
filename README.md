@@ -1,6 +1,6 @@
 # Express/Sequelize Review
 
-This is to help students in 1710-FSA-RM to be prepared for upcoming express-sequelize checkpoint.
+This is to help students in 1710-FSA-RM to be prepared for upcoming express-sequelize checkpoint
 
 ## Steps
 1. run npm install
