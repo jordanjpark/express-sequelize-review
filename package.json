@@ -4,7 +4,11 @@
   "description": "practice for checkpoint-express-sequelize",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon ./bin/www",
     "test": "nodemon --exec 'mocha --reporter spec --timeout 300 test/*.test.js || true'",
+    "db-init": "./db-init.sh",
+    "postinstall": "npm run db-init"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jordanjpark/express-sequelize-review.git"
