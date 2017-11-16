@@ -1,6 +1,6 @@
 {
   "name": "express-sequelize-review",
-  "version": "1.0.0",
+  "version": "0.0.5",
   "description": "for 1710-FSA-RM to prepare for checkpoint-express-sequelize",
   "scripts": {
     "start": "nodemon ./bin/www",
@@ -20,6 +20,7 @@
   "license": "ISC",
   "dependencies": {
     "async": "^1.4.2",
+    "bluebird": "^3.5.1",
     "body-parser": "^1.14.1",
     "chalk": "^1.1.1",
     "debug": "^2.2.0",
