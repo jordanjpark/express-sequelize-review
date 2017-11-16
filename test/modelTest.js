@@ -12,7 +12,7 @@ describe('Product Model', () => {
   });
 
   // test #1
-  it('a product has name, description and price', () => {
+  xit('a product has name, description and price', () => {
 
     return Product.create({
       name: 'Coors Light',
@@ -28,7 +28,7 @@ describe('Product Model', () => {
   });
 
   // test #2
-  it('a product has `strict` requirement for description to be `not null` and `not empty` (hint: validate)', () => {
+  xit('a product has `strict` requirement for description to be `not null` and `not empty` (hint: validate)', () => {
 
 
     var budLight = Product.build({
@@ -51,7 +51,7 @@ describe('Product Model', () => {
   });
 
   // test #3
-  it('a product has `isCheap` property and a `getter` to check if it is cheap (cheap = less than $3) ', () => {
+  xit('a product has `isCheap` property and a `getter` to check if it is cheap (cheap = less than $3) ', () => {
 
     return Product.findOne({ where: {name: 'Coors Light'} })
     .then(foundProduct => {
@@ -65,7 +65,7 @@ describe('Product Model', () => {
   describe('Getter', function() {
 
   // test #4
-    it("contains an `initials` getter that gives a product's initials", function() {
+    xit("contains an `initials` getter that gives a product's initials", function() {
 
       return Product.create({
         name: 'Coors Light',
@@ -106,7 +106,7 @@ describe('Product Model', () => {
     });
 
   // test #5
-    it('a product has a `class method` to find with initials', () => {
+    xit('a product has a `class method` to find with initials', () => {
 
       return Product.findByInitials('BL')
       .then(foundProduct => {
@@ -120,7 +120,7 @@ describe('Product Model', () => {
   describe('Instance Method', function() {
 
   // test #6
-    it('a product has an `instance method` to change price', function() {
+    xit('a product has an `instance method` to change price', function() {
 
       return Product.findOne({ where: { name: 'Miller Light' }})
       .then(foundProduct => {
@@ -135,7 +135,7 @@ describe('Product Model', () => {
   describe('Hook', function() {
 
   // test #7
-    it('a product has a `hook` to validate `isExpensive` property (expensive = more than $5)', function() {
+    xit('a product has a `hook` to validate `isExpensive` property (expensive = more than $5)', function() {
 
       return Product.findOne({ where: { name: 'Booze Light' }})
       .then(foundProduct => {
@@ -145,7 +145,7 @@ describe('Product Model', () => {
     });
 
   // test #8
-    it('the hook is reset when a product is updated', function() {
+    xit('the hook is reset when a product is updated', function() {
 
         return Product.findOne({ where: { name: 'Booze Light' }})
         .then(expensiveBooze => {
@@ -164,7 +164,7 @@ describe('Product Model', () => {
   describe('Association', function() {
 
   // test #9
-  it('a product belongs to a user, who is stored as the product\'s `seller`', function() {
+  xit('a product belongs to a user, who is stored as the product\'s `seller`', function() {
 
         var seller;
 

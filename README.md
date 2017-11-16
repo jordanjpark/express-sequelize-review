@@ -11,5 +11,4 @@ This is to help students in 1710-FSA-RM to be prepared for upcoming express-sequ
 __x out `it` in each test spec to run each test spec__
 
 ## Version Information
-- 0.0.5 (as of 11/16)
-only Sequelize portion of the workshop is built (skip step 4)
+- 0.0.5 (as of 11/16): only Sequelize portion of the workshop is built (skip step 4)
