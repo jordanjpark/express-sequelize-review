@@ -18,16 +18,16 @@ app.use(express.static(__dirname + '/public'));
 app.use('/', routes);
 
 // custom error handling
-app.use(function (err, req, res, next) {
+app.use(function(err, req, res, next) {
   // clean up the trace to just relevant info
   var cleanTrace = err.stack
-  .split('\n')
-  .filter(line => {
-    var notNodeInternal = line.indexOf(__dirname) > -1;
-    var notNodeModule = line.indexOf('node_modules') === -1;
-    return notNodeInternal && notNodeModule;
-  })
-  .join('\n');
+    .split('\n')
+    .filter(line => {
+      var notNodeInternal = line.indexOf(__dirname) > -1;
+      var notNodeModule = line.indexOf('node_modules') === -1;
+      return notNodeInternal && notNodeModule;
+    })
+    .join('\n');
   // colorize and format the output
   console.log(chalk.magenta('      ' + err.message));
   console.log('    ' + chalk.gray(cleanTrace));

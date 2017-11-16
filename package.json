@@ -1,11 +1,10 @@
 {
   "name": "express-sequelize-review",
   "version": "1.0.0",
-  "description": "practice for checkpoint-express-sequelize",
-  "main": "index.js",
+  "description": "for 1710-FSA-RM to prepare for checkpoint-express-sequelize",
   "scripts": {
     "start": "nodemon ./bin/www",
-    "test": "nodemon --exec 'mocha --reporter spec --timeout 300 test/*.test.js || true'",
+    "test": "nodemon --exec 'mocha --reporter spec --timeout 300 ./test || true'",
     "db-init": "./db-init.sh",
     "postinstall": "npm run db-init"
   },
@@ -19,8 +18,20 @@
   ],
   "author": "Jordan Park",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/jordanjpark/express-sequelize-review/issues"
+  "dependencies": {
+    "async": "^1.4.2",
+    "body-parser": "^1.14.1",
+    "chalk": "^1.1.1",
+    "debug": "^2.2.0",
+    "express": "^4.13.3",
+    "morgan": "^1.6.1",
+    "pg": "^4.5.5",
+    "sequelize": "^4.4.0"
   },
-  "homepage": "https://github.com/jordanjpark/express-sequelize-review#readme"
+  "devDependencies": {
+    "chai": "^3.3.0",
+    "mocha": "^2.3.3",
+    "nodemon": "^1.7.1",
+    "supertest": "^1.1.0"
+  }
 }
